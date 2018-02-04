@@ -36,7 +36,7 @@ void create_hotspot_bench(double rate);
 
 int main(int argc, char *argv[])
 {
-	ofstream result("./results");
+	//ofstream result("./results");
 	SRGen random_gen;
 	configuration c_par(argc, argv);
 	cout<<c_par;
@@ -47,12 +47,12 @@ int main(int argc, char *argv[])
 			sim_foundation sim_net;
 			network_mess_queue.simulator();
 			double delay=sim_net.simulation_results();
-			result<<rate<<"\t"<<delay<<"\n";
+			//result<<rate<<"\t"<<delay<<"\n";
 		} catch (exception & e) {
 			cerr << e.what();
 		}
 	}
-	result.close();
+	//result.close();
 
 	//added by swain
 	if (flit_trace)
