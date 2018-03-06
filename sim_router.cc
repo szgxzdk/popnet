@@ -634,6 +634,9 @@ void sim_router_template::flit_traversal(long i)
 	}
 }
 
+//added by Swain
+long end_time;
+
 //***************************************************************************//
 //receive the flit at the destination router
 // 更新延时的时间的唯一的函数。
@@ -643,6 +646,9 @@ void sim_router_template::accept_flit(time_type a, const flit_template & b)
 		mess_queue::wm_pointer().TotFin_inc();
 		time_type t = a - b.start_time();
 		delay_update(t);
+
+		//added by Swain
+		end_time = a;
 	}
 }
 

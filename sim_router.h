@@ -21,6 +21,9 @@ extern "C" {
 #include "SIM_power_router.h"
 }
 
+//added by swain
+extern long end_time;
+
 // *****************************************************//
 // data structure to model the structure and behavior   //
 // of routers.                                          //

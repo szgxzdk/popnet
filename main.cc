@@ -18,6 +18,7 @@ extern "C" {
 
 //added by Swain
 #include "path.h"
+#include "sim_router.h"
 
 #define cube_x 8
 #define cube_y 8
@@ -57,6 +58,7 @@ int main(int argc, char *argv[])
 	//added by swain
 	if (flit_trace)
 		print_paths(cout);
+	printf("The last flit is accepted at the %ld cycle\n", end_time);
 
 }
 
