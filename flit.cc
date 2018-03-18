@@ -25,7 +25,7 @@ flit_template::flit_template():
 {
 }
 
-flit_template::flit_template(long a, flit_type b, add_type & c, 
+flit_template::flit_template(long a, int b, add_type & c,
 				 add_type & d, time_type e, const Data_type & f):
 	flit_id_(a),
 	type_(b),

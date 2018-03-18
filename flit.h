@@ -11,7 +11,7 @@ class flit_template {
 	friend ostream& operator<<(ostream& os, const flit_template & ft);
 	private:
 		long flit_id_;
-		flit_type type_;
+		int type_;
 		add_type sor_addr_;
 		add_type des_addr_;
 		time_type start_time_;
@@ -21,8 +21,8 @@ class flit_template {
 	public:
 		long flit_id() {return flit_id_;}
 		long flit_id() const {return flit_id_;}
-		flit_type type() {return type_;}
-		flit_type type() const {return type_;}
+		int type() {return type_;}
+		int type() const {return type_;}
 		add_type & sor_addr() {return sor_addr_;}
 		const add_type & sor_addr() const {return sor_addr_;}
 		add_type & des_addr() {return des_addr_;}
@@ -41,7 +41,7 @@ class flit_template {
 		const Data_type & data() const {return data_;}
 
 		flit_template();
-		flit_template(long a, flit_type b, add_type & c, add_type & d,
+		flit_template(long a, int b, add_type & c, add_type & d,
 					time_type e, const Data_type & f);
 		flit_template(const flit_template & a);
 };

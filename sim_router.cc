@@ -417,6 +417,7 @@ void sim_router_template::inject_packet(long a, add_type & b, add_type & c,
 				flat_ull(0, MAX_64_));
 			flit_data.push_back(init_data_[i]);
 		}
+		//header flit
 		if(l == 0) {
 			vc_t = pair<long, long> (0, input_module_.input(0,0).size());
 			for(long i = 0; i < vc_number_; i++) {
@@ -435,8 +436,13 @@ void sim_router_template::inject_packet(long a, add_type & b, add_type & c,
 				input_module_.ibuff_is_full();
 			}
             //modified by Swain
-			input_module_.add_flit(0, (vc_t.first),
-								flit_template(flit_counter++, HEADER_, b, c, d, flit_data));
+			if (l == (e - 1))
+				input_module_.add_flit(0, (vc_t.first),
+									   flit_template(flit_counter++, HEADER_ | TAIL_, b, c, d, flit_data));
+			else
+				input_module_.add_flit(0, (vc_t.first),
+									   flit_template(flit_counter++, HEADER_, b, c, d, flit_data));
+
 		}else if(l == (e - 1)){
 			input_module_.add_flit(0, (vc_t.first),
 								flit_template(flit_counter++, TAIL_, b, c, d, flit_data));
@@ -469,7 +475,8 @@ void sim_router_template::receive_flit(long a, long b, flit_template & c)
     
 	input_module_.add_flit(a, b, c);
 	power_module_.power_buffer_write(a, c.data());
-	if(c.type() == HEADER_) {
+	//modified by Swain
+	if(c.type() & HEADER_) {
 		if(input_module_.input(a,b).size() == 1) {
 			input_module_.state_update(a, b, ROUTING_);
 		}else {
@@ -575,11 +582,13 @@ void sim_router_template::flit_outbuffer()
 					}
 				}
 				output_module_.add_add(out_t.first, out_t);
-				if(flit_t.type() == TAIL_) {
+				//modified by Swain
+				if(flit_t.type() & TAIL_) {
 					output_module_.release(out_t.first, out_t.second);
 				}
 				if(in_size_t > 1) {
-					if(flit_t.type() == TAIL_) {
+					//modified by Swain
+					if(flit_t.type() & TAIL_) {
 						if(configuration::ap().vc_share() == MONO_) {
 							if(i != 0){
 							if(in_size_t != 1) {
@@ -642,7 +651,8 @@ long end_time;
 // 更新延时的时间的唯一的函数。
 void sim_router_template::accept_flit(time_type a, const flit_template & b)
 {
-    if(b.type() == TAIL_) {
+	//modified by Swain
+    if(b.type() & TAIL_) {
 		mess_queue::wm_pointer().TotFin_inc();
 		time_type t = a - b.start_time();
 		delay_update(t);
