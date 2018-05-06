@@ -1,4 +1,5 @@
 #include "flit.h"
+#include <stdio.h>
 
 ostream& operator<<(ostream& os, const flit_template & ft)
 {
@@ -25,14 +26,17 @@ flit_template::flit_template():
 {
 }
 
+//modified by Swain
 flit_template::flit_template(long a, int b, add_type & c,
-				 add_type & d, time_type e, const Data_type & f):
+							 add_type & d, time_type e, const Data_type & f,
+							 long packet_id):
 	flit_id_(a),
 	type_(b),
 	sor_addr_(c),
 	des_addr_(d),
 	start_time_(e),
-	data_(f)
+	data_(f),
+	packet_id_(packet_id)
 {
 }
 
@@ -43,6 +47,7 @@ flit_template::flit_template(const flit_template & a):
 	des_addr_(a.des_addr()),
 	start_time_(a.start_time()),
 	finish_time_(a.finish_time()),
-	data_(a.data())
+	data_(a.data()),
+	packet_id_(a.packet_id_)
 {
 }

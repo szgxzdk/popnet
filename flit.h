@@ -17,7 +17,8 @@ class flit_template {
 		time_type start_time_;
 		time_type finish_time_;
 		Data_type data_;
-	
+		//added by Swain
+		long packet_id_;
 	public:
 		long flit_id() {return flit_id_;}
 		long flit_id() const {return flit_id_;}
@@ -34,6 +35,10 @@ class flit_template {
 		time_type finish_time() {return finish_time_;}
 		time_type finish_time() const {return finish_time_;}
 
+		//added by Swain
+		long packet_id() {return packet_id_;}
+		long packet_id() const {return packet_id_;}
+
 		void set_start(time_type a) {start_time_ = a;}
 		void set_finish(time_type a) {finish_time_ = a;}
 
@@ -42,7 +47,7 @@ class flit_template {
 
 		flit_template();
 		flit_template(long a, int b, add_type & c, add_type & d,
-					time_type e, const Data_type & f);
+					  time_type e, const Data_type & f, long packet_id);
 		flit_template(const flit_template & a);
 };
 #endif

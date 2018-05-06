@@ -18,6 +18,7 @@ extern "C" {
 
 //added by Swain
 #include "path.h"
+#include "delay.h"
 #include "sim_router.h"
 
 #define cube_x 8
@@ -59,6 +60,10 @@ int main(int argc, char *argv[])
 	if (flit_trace)
 		print_paths(cout);
 	printf("The last flit is accepted at the %ld cycle\n", end_time);
+
+	//added by swain
+	save_delay();
+	release_delay();
 
 }
 

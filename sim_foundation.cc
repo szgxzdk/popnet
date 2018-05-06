@@ -116,6 +116,8 @@ void sim_foundation::receive_EVG_message(mess_event mesg)
     add_type sor_addr_t;
     add_type des_addr_t;
     long pack_size_t;
+	//added by Swain
+	long packet_id;
     for(long i = 0; i < cube_size_; i++) {
 		long t; inFile_ >> t;
 		Sassert(!inFile_.eof());
@@ -127,6 +129,8 @@ void sim_foundation::receive_EVG_message(mess_event mesg)
 		des_addr_t.push_back(t);
 	}
 	inFile_ >> pack_size_t;
+	//added by Swain
+	inFile_ >> packet_id;
 	Sassert(!inFile_.eof());
 	router(sor_addr_t).receive_packet();
 	packet_counter_++;

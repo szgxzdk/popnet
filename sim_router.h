@@ -309,8 +309,9 @@ class sim_router_template {
 		void receive_credit(long a, long b);
 
 		void receive_packet();
+	//modified by Swain
 		void inject_packet(long a, add_type & b, add_type & c, time_type d,
-				long e);
+						   long e, long packet_id);
 		void receive_flit(long a, long b, flit_template & c);
 
 		void routing_decision();

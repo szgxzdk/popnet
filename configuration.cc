@@ -12,6 +12,7 @@
 #include <strstream>
 
 #include "path.h"
+#include "delay.h"
 
 configuration * configuration::ap_ = 0;
 
@@ -28,7 +29,8 @@ configuration::configuration(int argc, char * const argv []):
 	vc_share_(MONO_)
 {
 	ap_ = this;
-	const char * opt_str = "h:?:A:c:V:B:F:T:r:I:O:R:L:";
+	//modified by Swain
+	const char * opt_str = "h:?:A:c:V:B:F:T:r:I:O:R:L:pD:i:";
 	string usage = string("usage: ") + argv[0] + " [" +
 		opt_str + "] \n";
 
@@ -102,8 +104,17 @@ configuration::configuration(int argc, char * const argv []):
 			//added by swain
 			//display flit path
 		case 'p':
-			if (atoi(optarg) == 1)
-				flit_trace = true;
+			flit_trace = true;
+			break;
+			//save delay information
+		case 'D':
+			init_delay(optarg);
+			break;
+			//delay in this interval
+		case 'i':
+			start_cycle = atoi(optarg);
+			end_cycle = atoi(argv[optind]);
+			break;
 
 		default :
 			throw init_error(usage);

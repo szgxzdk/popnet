@@ -11,6 +11,7 @@
 
 //added by Swain
 #include "path.h"
+#include "delay.h"
 
 // *****************************************************//
 // data structure to model the structure and behavior   //
@@ -366,6 +367,8 @@ void sim_router_template::receive_packet()
 	add_type sor_addr_t;
 	add_type des_addr_t;
 	long pack_size_t;
+	//added by swain
+	long packet_id;
 
 	while((input_module_.ibuff_full() == false) && (local_input_time_ <=
 				event_time + S_ELPS_)) {
@@ -384,9 +387,12 @@ void sim_router_template::receive_packet()
   	  }
     	//read packet size
     	localinFile() >> pack_size_t;
+		//added by swain, read packet ID
+		localinFile() >> packet_id;
 	    inject_packet(packet_counter_, sor_addr_t,
-	            des_addr_t, local_input_time_, pack_size_t);
+					  des_addr_t, local_input_time_, pack_size_t, packet_id);
 	    packet_counter_++;
+
 
    	 	//second, create next EVG_ event
 	    if(!localinFile().eof()) {
@@ -403,8 +409,9 @@ void sim_router_template::receive_packet()
 // 这个是会影响flit 的start_time_的函数。
 // d 是一个十分重要的。
 //a : flit id. b: sor add. c: des add. d: start time. e: size
+//modified by Swain
 void sim_router_template::inject_packet(long a, add_type & b, add_type & c,
-			time_type d, long e)
+										time_type d, long e, long packet_id)
 {
 	// if it is the HEADER_ flit choose the shortest waiting vc queue
 	// next state, it should choose routing
@@ -438,17 +445,17 @@ void sim_router_template::inject_packet(long a, add_type & b, add_type & c,
             //modified by Swain
 			if (l == (e - 1))
 				input_module_.add_flit(0, (vc_t.first),
-									   flit_template(flit_counter++, HEADER_ | TAIL_, b, c, d, flit_data));
+									   flit_template(flit_counter++, HEADER_ | TAIL_, b, c, d, flit_data, packet_id));
 			else
 				input_module_.add_flit(0, (vc_t.first),
-									   flit_template(flit_counter++, HEADER_, b, c, d, flit_data));
+									   flit_template(flit_counter++, HEADER_, b, c, d, flit_data, packet_id));
 
 		}else if(l == (e - 1)){
 			input_module_.add_flit(0, (vc_t.first),
-								flit_template(flit_counter++, TAIL_, b, c, d, flit_data));
+								   flit_template(flit_counter++, TAIL_, b, c, d, flit_data, packet_id));
 		}else {
 			input_module_.add_flit(0, (vc_t.first),
-								flit_template(flit_counter++, BODY_, b, c, d, flit_data));
+								   flit_template(flit_counter++, BODY_, b, c, d, flit_data, packet_id));
 		}
 		power_module_.power_buffer_write(0, flit_data);
 	}
@@ -657,8 +664,12 @@ void sim_router_template::accept_flit(time_type a, const flit_template & b)
 		time_type t = a - b.start_time();
 		delay_update(t);
 
-		//added by Swain
+		//added by Swain, record end time of last flit
 		end_time = a;
+
+		//added by Swain, output delay for each packet
+		if (b.start_time() >= start_cycle && b.start_time() < end_cycle)
+			add_delay((int)t, b.packet_id());
 	}
 }
 

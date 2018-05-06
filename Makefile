@@ -6,12 +6,12 @@ CFLAGS =  -DS_OUT_DEBUG -Wno-deprecated  -g -DPOWER_TEST -I./$(POWER_RELEASE)/po
 LINKFLAGS = -L./$(POWER_RELEASE)/power -lm -lpower 
 .SUFFIXES: .o .cc
 
-HEADERS = index.h SString.h SStd.h SRGen.h Svector.h configuration.h mess_queue.h mess_event.h flit.h sim_foundation.h sim_router.h sim_vcarb.h
+HEADERS = index.h SString.h SStd.h SRGen.h Svector.h configuration.h mess_queue.h mess_event.h flit.h sim_foundation.h sim_router.h sim_vcarb.h path.h delay.h
 
 TARGET = popnet
 PTARGET = power_model
 
-SIM_SRCS = SString.cc SStd.cc SRGen.cc configuration.cc flit.cc sim_router.cc sim_routing.cc sim_vcarb.cc  mess_event.cc sim_foundation.cc mess_queue.cc main.cc path.cc
+SIM_SRCS = SString.cc SStd.cc SRGen.cc configuration.cc flit.cc sim_router.cc sim_routing.cc sim_vcarb.cc  mess_event.cc sim_foundation.cc mess_queue.cc main.cc path.cc delay.cc
 
 SIM_OBJS = $(SIM_SRCS:.cc=.o)
 

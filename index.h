@@ -10,11 +10,14 @@ using namespace std;
 enum mess_type {EVG_, ROUTER_, WIRE_, CREDIT_};
 enum routing_type {XY_ , TXY_ ,XYZ_};
 enum VC_state_type {INIT_, ROUTING_, VC_AB_, SW_AB_, SW_TR_, HOME_};
+//modified by Swain
 //enum flit_type {HEADER_, BODY_, TAIL_};
 const int HEADER_ = 1, BODY_ = 1 << 1, TAIL_ = 1 << 2;
 enum vc_share_type {SHARE_, MONO_};
 enum VC_usage_type {USED_, FREE_};
-typedef double time_type;
+//modified by Swain
+//typedef double time_type;
+typedef long time_type;
 typedef vector<long> add_type;
 typedef pair<long, long> VC_type;
 typedef vector<unsigned long long> Data_type;
