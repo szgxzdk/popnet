@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 
 #include <vector>
 
@@ -9,7 +10,7 @@ using namespace std;
 
 bool delay_trace = false;
 
-long start_cycle, end_cycle;
+long start_cycle = 0, end_cycle = LONG_MAX;
 
 FILE * delay_file = NULL;
 

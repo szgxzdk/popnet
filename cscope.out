@@ -1,4 +1,4 @@
-cscope 15 $HOME/popnet               0000416816
+cscope 15 $HOME/popnet               0000424288
 	@RGen.cc
 
 1 
@@ -2463,11 +2463,15 @@ vc_sh¬e_
 	~<¡dlib.h
 >
 
-6 
+5 
+	~<lim™s.h
+>
+
+7 
 	~<veùÜ
 >
 
-8 
+9 
 usšg
  
 Çme¥aû
@@ -2475,7 +2479,7 @@ usšg
 	g¡d
 ;
 
-10 
+11 
 boÞ
  
 	gd–ay_Œaû
@@ -2483,13 +2487,15 @@ boÞ
 çl£
 ;
 
-12 
+13 
 	g¡¬t_cyþe
-, 
+ = 0, 
 	g’d_cyþe
+ = 
+LONG_MAX
 ;
 
-14 
+15 
 FILE
  * 
 	gd–ay_fže
@@ -2497,23 +2503,23 @@ FILE
 NULL
 ;
 
-16 þas 
+17 þas 
 	cd–ay
  {
 
-17 
+18 
 	mpublic
 :
 
-18 
+19 
 d–ay_time
 ;
 
-19 
+20 
 	m·ck‘_id
 ;
 
-21 
+22 
 	$d–ay
 (
 d–ay_time
@@ -2521,7 +2527,7 @@ d–ay_time
 ·ck‘_id
 ):
 
-22 
+23 
 	`d–ay_time
 (
 d–ay_time
@@ -2531,11 +2537,11 @@ d–ay_time
 ·ck‘_id
 ) {}
 
-23 
+24 
 	}
 };
 
-25 
+26 
 	gveùÜ
 <
 	gd–ay
@@ -2543,19 +2549,19 @@ d–ay_time
 	gd–ays
 ;
 
-27 
+28 
 	$š™_d–ay
 (cÚ¡ * 
 ·th
 ) {
 
-28 
+29 
 d–ay_Œaû
  = 
 Œue
 ;
 
-30 
+31 
 d–ay_fže
  = 
 	`fÝ’
@@ -2563,13 +2569,13 @@ d–ay_fže
 ·th
 , "w");
 
-31 ià(
+32 ià(
 d–ay_fže
  =ð
 NULL
 ) {
 
-32 
+33 
 	`årštf
 (
 ¡d”r
@@ -2577,35 +2583,35 @@ NULL
 ·th
 );
 
-33 
+34 
 	`ex™
 (1);
 
-35 
+36 
 	}
 }
 
-37 
+38 
 	$»Ëa£_d–ay
 () {
 
-38 ià(
+39 ià(
 d–ay_fže
  !ð
 NULL
 )
 
-39 
+40 
 	`fþo£
 (
 d–ay_fže
 );
 
-40 
+41 
 	}
 }
 
-42 
+43 
 	$add_d–ay
 (
 d–ay_time
@@ -2613,11 +2619,11 @@ d–ay_time
 ·ck‘_id
 ) {
 
-43 ià(
+44 ià(
 d–ay_Œaû
 )
 
-44 
+45 
 d–ays
 .
 	`push_back
@@ -2629,19 +2635,19 @@ d–ay_time
 ·ck‘_id
 ));
 
-45 
+46 
 	}
 }
 
-47 
+48 
 	$§ve_d–ay
 () {
 
-48 ià(
+49 ià(
 d–ay_Œaû
 ) {
 
-49 
+50 
 veùÜ
 <
 d–ay
@@ -2651,7 +2657,7 @@ d–ay
 ™
 ;
 
-50 
+51 
 ™
  = 
 d–ays
@@ -2661,7 +2667,7 @@ d–ays
 	`’d
 (); it++)
 
-51 
+52 
 	`årštf
 (
 d–ay_fže
@@ -2673,7 +2679,7 @@ d–ay_fže
 d–ay_time
 );
 
-53 
+54 
 	}
 }
 
@@ -3225,7 +3231,17 @@ fšish_time_
 	}
 }
 
-42 
+43 
+	$£t_ty³
+(
+ty³
+è{
+ty³_
+ =y³;
+	}
+}
+
+45 
 	$£t_¡¬t
 (
 time_ty³
@@ -3237,7 +3253,7 @@ a
 	}
 }
 
-43 
+46 
 	$£t_fšish
 (
 time_ty³
@@ -3249,7 +3265,7 @@ fšish_time_
 	}
 }
 
-45 
+48 
 	gD©a_ty³
  & 
 	$d©a
@@ -3259,7 +3275,7 @@ d©a_
 	}
 }
 
-46 cÚ¡ 
+49 cÚ¡ 
 	gD©a_ty³
  & 
 	$d©a
@@ -3269,11 +3285,11 @@ d©a_
 	}
 }
 
-48 
+51 
 æ™_‹m¶©e
 ();
 
-49 
+52 
 æ™_‹m¶©e
 (
 a
@@ -3287,7 +3303,7 @@ c
 d
 ,
 
-50 
+53 
 time_ty³
  
 e
@@ -3299,7 +3315,7 @@ f
 ·ck‘_id
 );
 
-51 
+54 
 æ™_‹m¶©e
 (cÚ¡ fl™_‹m¶©& 
 a
@@ -3375,7 +3391,7 @@ usšg
 	mHOME_
 };
 
-14 cÚ¡ 
+15 cÚ¡ 
 	gHEADER_
  = 1, 
 	gBODY_
@@ -3383,7 +3399,7 @@ usšg
 	gTAIL_
  = 1 << 2;
 
-15 
+16 
 	evc_sh¬e_ty³
  {
 	mSHARE_
@@ -3391,7 +3407,7 @@ usšg
 	mMONO_
 };
 
-16 
+17 
 	eVC_u§ge_ty³
  {
 	mUSED_
@@ -3399,99 +3415,99 @@ usšg
 	mFREE_
 };
 
-17 
+20 
 	ttime_ty³
 ;
 
-18 
+21 
 	gveùÜ
 <> 
 	tadd_ty³
 ;
 
-19 
+22 
 	g·œ
 <, > 
 	tVC_ty³
 ;
 
-20 
+23 
 	gveùÜ
 <> 
 	tD©a_ty³
 ;
 
-21 
+24 
 	tAtom_ty³
 ;
 
-22 cÚ¡ 
+25 cÚ¡ 
 VC_ty³
  
 	gVC_NULL
  = VC_type(-1, -1);
 
-23 
+26 
 	#BUFF_BOUND_
  100
 
 	)
 
-24 
+27 
 	#WIRE_DELAY_
  0.9
 
 	)
 
-25 
+28 
 	#PIPE_DELAY_
  1.0
 
 	)
 
-26 
+29 
 	#CREDIT_DELAY_
  1.0
 
 	)
 
-27 
+30 
 	#REPORT_PERIOD_
  2000
 
 	)
 
-28 
+31 
 	#S_ELPS_
  0.00000001
 
 	)
 
-29 
+32 
 	#ATOM_WIDTH_
  64
 
 	)
 
-30 
+33 
 	#ZERO_
  0
 
 	)
 
-31 
+34 
 	#MAX_64_
  0xffffffffffffffffLL
 
 	)
 
-32 
+35 
 	#CORR_EFF_
  0.8
 
 	)
 
-33 
+36 
 	#POWER_NOM_
  1e9
 
@@ -14113,7 +14129,15 @@ ev’t_time
 æ™_t
 );
 
-159 
+160 ià(!(
+æ™_t
+.
+	`ty³
+(è& 
+TAIL_
+))
+
+161 
 šput_moduË_
 .
 	`»move_æ™
@@ -14121,7 +14145,19 @@ ev’t_time
 j
 );
 
-160 
+163 
+šput_moduË_
+.
+	`g‘_æ™
+(0, 
+j
+).
+	`£t_ty³
+(
+TAIL_
+);
+
+164 
 šput_moduË_
 .
 	`¡©e_upd©e
@@ -14131,7 +14167,7 @@ j
 HOME_
 );
 
-162 
+166 
 šput_moduË_
 .
 	`þ—r_routšg
@@ -14139,7 +14175,7 @@ HOME_
 j
 );
 
-163 
+167 
 šput_moduË_
 .
 	`þ—r_üoutšg
@@ -14147,7 +14183,7 @@ j
 j
 );
 
-164 (
+168 (
 this
 ->*
 cu¼_®gÜ™hm
@@ -14159,7 +14195,7 @@ sÜ_t
 j
 );
 
-165 
+169 
 šput_moduË_
 .
 	`¡©e_upd©e
@@ -14169,7 +14205,7 @@ j
 VC_AB_
 );
 
-168 }if(
+172 }if(
 šput_moduË_
 .
 	`¡©e
@@ -14179,7 +14215,7 @@ j
 HOME_
 ) {
 
-169 if(
+173 if(
 šput_moduË_
 .
 	`šput
@@ -14189,7 +14225,7 @@ j
 	`size
 () > 0) {
 
-170 
+174 
 æ™_t
  = 
 šput_moduË_
@@ -14199,7 +14235,17 @@ j
 j
 );
 
-173 
+176 
+	`Sas£¹
+(!(
+æ™_t
+.
+	`ty³
+(è& 
+HEADER_
+));
+
+177 
 	`acû±_æ™
 (
 ev’t_time
@@ -14207,7 +14253,7 @@ ev’t_time
 æ™_t
 );
 
-174 
+178 
 šput_moduË_
 .
 	`»move_æ™
@@ -14215,7 +14261,7 @@ ev’t_time
 j
 );
 
-176 if(
+180 if(
 æ™_t
 .
 	`ty³
@@ -14223,7 +14269,7 @@ j
 TAIL_
 ) {
 
-177 if(
+181 if(
 šput_moduË_
 .
 	`šput
@@ -14233,7 +14279,7 @@ j
 	`size
 () > 0) {
 
-178 
+182 
 šput_moduË_
 .
 	`¡©e_upd©e
@@ -14243,7 +14289,7 @@ j
 ROUTING_
 );
 
-180 
+184 
 šput_moduË_
 .
 	`¡©e_upd©e
@@ -14253,25 +14299,25 @@ j
 INIT_
 );
 
-188 
+192 
 i
  = 1; i < 
 physic_pÜts_
 ; i++) {
 
-189 
+193 
 j
  = 0; j < 
 vc_numb”_
 ; j++) {
 
-191 
+195 
 æ™_‹m¶©e
  
 æ™_t
 ;
 
-192 if(
+196 if(
 šput_moduË_
 .
 	`šput
@@ -14283,7 +14329,7 @@ j
 	`size
 () > 0) {
 
-193 
+197 
 æ™_t
  = 
 šput_moduË_
@@ -14295,7 +14341,7 @@ i
 j
 );
 
-194 
+198 
 add_ty³
  
 des_t
@@ -14305,13 +14351,13 @@ des_t
 	`des_addr
 ();
 
-195 if(
+199 if(
 add»ss_
  =ð
 des_t
 ) {
 
-196 
+200 
 add_ty³
  
 üe_add_t
@@ -14319,29 +14365,29 @@ add_ty³
 add»ss_
 ;
 
-197 
+201 
 üe_pc_t
  = 
 i
 ;
 
-198 if((
+202 if((
 i
  % 2) == 0) {
 
-199 
+203 
 üe_pc_t
  = 
 i
  - 1;
 
-200 
+204 
 üe_add_t
 [(
 i
 -1)/2] ++;
 
-201 if(
+205 if(
 üe_add_t
 [(
 i
@@ -14349,31 +14395,31 @@ i
 ¬y_size_
 ) {
 
-202 
+206 
 üe_add_t
 [(
 i
 -1)/2] = 0;
 
-205 
+209 
 üe_pc_t
  = 
 i
  + 1;
 
-206 
+210 
 üe_add_t
 [(
 i
 -1)/2] --;
 
-207 if(
+211 if(
 üe_add_t
 [(
 i
 -1)/2] == -1) {
 
-208 
+212 
 üe_add_t
 [(
 i
@@ -14381,7 +14427,7 @@ i
 ¬y_size_
  - 1;
 
-211 
+215 
 mess_queue
 ::
 	`wm_poš‹r
@@ -14389,7 +14435,7 @@ mess_queue
 	`add_mes§ge
 (
 
-212 
+216 
 	`mess_ev’t
 (
 ev’t_time
@@ -14397,7 +14443,7 @@ ev’t_time
 CREDIT_DELAY_
 ,
 
-213 
+217 
 CREDIT_
 , 
 add»ss_
@@ -14409,7 +14455,7 @@ add»ss_
 j
 ));
 
-217 if(
+221 if(
 šput_moduË_
 .
 	`¡©e
@@ -14421,7 +14467,7 @@ j
 ROUTING_
 ) {
 
-218 
+222 
 æ™_t
  = 
 šput_moduË_
@@ -14433,7 +14479,7 @@ i
 j
 );
 
-220 
+224 
 	`Sas£¹
 (
 æ™_t
@@ -14443,7 +14489,7 @@ j
 HEADER_
 );
 
-221 
+225 
 add_ty³
  
 des_t
@@ -14453,7 +14499,7 @@ des_t
 	`des_addr
 ();
 
-222 
+226 
 add_ty³
  
 sÜ_t
@@ -14463,13 +14509,13 @@ sÜ_t
 	`sÜ_addr
 ();
 
-223 if(
+227 if(
 add»ss_
  =ð
 des_t
 ) {
 
-224 
+228 
 	`acû±_æ™
 (
 ev’t_time
@@ -14477,7 +14523,29 @@ ev’t_time
 æ™_t
 );
 
-225 
+230 ià(
+æ™_t
+.
+	`ty³
+(è& 
+TAIL_
+)
+
+231 
+šput_moduË_
+.
+	`g‘_æ™
+(
+i
+, 
+j
+).
+	`£t_ty³
+(
+TAIL_
+);
+
+233 
 šput_moduË_
 .
 	`»move_æ™
@@ -14487,7 +14555,7 @@ i
 j
 );
 
-226 
+234 
 šput_moduË_
 .
 	`¡©e_upd©e
@@ -14499,7 +14567,7 @@ j
 HOME_
 );
 
-228 
+236 
 šput_moduË_
 .
 	`þ—r_routšg
@@ -14509,7 +14577,7 @@ i
 j
 );
 
-229 
+237 
 šput_moduË_
 .
 	`þ—r_üoutšg
@@ -14519,7 +14587,7 @@ i
 j
 );
 
-230 (
+238 (
 this
 ->*
 cu¼_®gÜ™hm
@@ -14533,7 +14601,7 @@ i
 j
 );
 
-231 
+239 
 šput_moduË_
 .
 	`¡©e_upd©e
@@ -14545,7 +14613,7 @@ j
 VC_AB_
 );
 
-234 }if(
+242 }if(
 šput_moduË_
 .
 	`¡©e
@@ -14557,7 +14625,7 @@ j
 HOME_
 ) {
 
-235 if(
+243 if(
 šput_moduË_
 .
 	`šput
@@ -14569,7 +14637,7 @@ j
 	`size
 () > 0) {
 
-236 
+244 
 æ™_t
  = 
 šput_moduË_
@@ -14581,7 +14649,7 @@ i
 j
 );
 
-238 
+246 
 	`Sas£¹
 (!(
 æ™_t
@@ -14591,7 +14659,7 @@ j
 HEADER_
 ));
 
-239 
+247 
 	`acû±_æ™
 (
 ev’t_time
@@ -14599,7 +14667,7 @@ ev’t_time
 æ™_t
 );
 
-240 
+248 
 šput_moduË_
 .
 	`»move_æ™
@@ -14609,7 +14677,7 @@ i
 j
 );
 
-241 if(
+249 if(
 æ™_t
 .
 	`ty³
@@ -14617,7 +14685,7 @@ j
 TAIL_
 ) {
 
-242 if(
+250 if(
 šput_moduË_
 .
 	`šput
@@ -14629,7 +14697,7 @@ j
 	`size
 () > 0) {
 
-243 
+251 
 šput_moduË_
 .
 	`¡©e_upd©e
@@ -14641,7 +14709,7 @@ j
 ROUTING_
 );
 
-245 
+253 
 šput_moduË_
 .
 	`¡©e_upd©e
@@ -14653,7 +14721,7 @@ j
 INIT_
 );
 
-252 
+260 
 	}
 }
 
@@ -15144,6 +15212,290 @@ NETWORK_VCARB_H_
 4 
 	gVC_MASK
 [10] = {1, 2, 4, 8, 16, 32, 64, 128, 258, 512};
+
+	@/usr/include/limits.h
+
+22 #iâdeà
+_LIBC_LIMITS_H_
+
+
+23 
+	#_LIBC_LIMITS_H_
+ 1
+
+	)
+
+25 
+	~<ã©u»s.h
+>
+
+31 
+	#MB_LEN_MAX
+ 16
+
+	)
+
+36 #ià!
+defšed
+ 
+__GNUC__
+ || __GNUC__ < 2
+
+41 #iâdeà
+_LIMITS_H
+
+
+42 
+	#_LIMITS_H
+ 1
+
+	)
+
+44 
+	~<b™s/wÜdsize.h
+>
+
+53 
+	#CHAR_BIT
+ 8
+
+	)
+
+56 
+	#SCHAR_MIN
+ (-128)
+
+	)
+
+57 
+	#SCHAR_MAX
+ 127
+
+	)
+
+60 
+	#UCHAR_MAX
+ 255
+
+	)
+
+63 #ifdeà
+__CHAR_UNSIGNED__
+
+
+64 
+	#CHAR_MIN
+ 0
+
+	)
+
+65 
+	#CHAR_MAX
+ 
+UCHAR_MAX
+
+
+	)
+
+67 
+	#CHAR_MIN
+ 
+SCHAR_MIN
+
+
+	)
+
+68 
+	#CHAR_MAX
+ 
+SCHAR_MAX
+
+
+	)
+
+72 
+	#SHRT_MIN
+ (-32768)
+
+	)
+
+73 
+	#SHRT_MAX
+ 32767
+
+	)
+
+76 
+	#USHRT_MAX
+ 65535
+
+	)
+
+79 
+	#INT_MIN
+ (-
+INT_MAX
+ - 1)
+
+	)
+
+80 
+	#INT_MAX
+ 2147483647
+
+	)
+
+83 
+	#UINT_MAX
+ 4294967295U
+
+	)
+
+86 #ià
+__WORDSIZE
+ == 64
+
+87 
+	#LONG_MAX
+ 9223372036854775807L
+
+	)
+
+89 
+	#LONG_MAX
+ 2147483647L
+
+	)
+
+91 
+	#LONG_MIN
+ (-
+LONG_MAX
+ - 1L)
+
+	)
+
+94 #ià
+__WORDSIZE
+ == 64
+
+95 
+	#ULONG_MAX
+ 18446744073709551615UL
+
+	)
+
+97 
+	#ULONG_MAX
+ 4294967295UL
+
+	)
+
+100 #ifdeà
+__USE_ISOC99
+
+
+103 
+	#LLONG_MAX
+ 9223372036854775807LL
+
+	)
+
+104 
+	#LLONG_MIN
+ (-
+LLONG_MAX
+ - 1LL)
+
+	)
+
+107 
+	#ULLONG_MAX
+ 18446744073709551615ULL
+
+	)
+
+121 #ià
+defšed
+ 
+__GNUC__
+ && !defšed 
+_GCC_LIMITS_H_
+
+
+123 #šþude_Ãxˆ<
+lim™s
+.
+h
+>
+
+129 #ià
+defšed
+ 
+__USE_ISOC99
+ && defšed 
+__GNUC__
+
+
+130 #iâdeà
+LLONG_MIN
+
+
+131 
+	#LLONG_MIN
+ (-
+LLONG_MAX
+-1)
+
+	)
+
+133 #iâdeà
+LLONG_MAX
+
+
+134 
+	#LLONG_MAX
+ 
+__LONG_LONG_MAX__
+
+
+	)
+
+136 #iâdeà
+ULLONG_MAX
+
+
+137 
+	#ULLONG_MAX
+ (
+LLONG_MAX
+ * 2ULL + 1)
+
+	)
+
+141 #ifdef 
+__USE_POSIX
+
+
+143 
+	~<b™s/posix1_lim.h
+>
+
+146 #ifdef 
+__USE_POSIX2
+
+
+147 
+	~<b™s/posix2_lim.h
+>
+
+150 #ifdef 
+__USE_XOPEN
+
+
+151 
+	~<b™s/xÝ’_lim.h
+>
 
 	@/usr/include/math.h
 
@@ -37115,6 +37467,472 @@ __d
 
 	)
 
+	@/usr/include/bits/posix1_lim.h
+
+24 #iâdef 
+_BITS_POSIX1_LIM_H
+
+
+25 
+	#_BITS_POSIX1_LIM_H
+ 1
+
+	)
+
+31 
+	#_POSIX_AIO_LISTIO_MAX
+ 2
+
+	)
+
+34 
+	#_POSIX_AIO_MAX
+ 1
+
+	)
+
+37 
+	#_POSIX_ARG_MAX
+ 4096
+
+	)
+
+40 #ifdeà
+__USE_XOPEN2K
+
+
+41 
+	#_POSIX_CHILD_MAX
+ 25
+
+	)
+
+43 
+	#_POSIX_CHILD_MAX
+ 6
+
+	)
+
+47 
+	#_POSIX_DELAYTIMER_MAX
+ 32
+
+	)
+
+51 
+	#_POSIX_HOST_NAME_MAX
+ 255
+
+	)
+
+54 
+	#_POSIX_LINK_MAX
+ 8
+
+	)
+
+57 
+	#_POSIX_LOGIN_NAME_MAX
+ 9
+
+	)
+
+60 
+	#_POSIX_MAX_CANON
+ 255
+
+	)
+
+64 
+	#_POSIX_MAX_INPUT
+ 255
+
+	)
+
+67 
+	#_POSIX_MQ_OPEN_MAX
+ 8
+
+	)
+
+70 
+	#_POSIX_MQ_PRIO_MAX
+ 32
+
+	)
+
+73 
+	#_POSIX_NAME_MAX
+ 14
+
+	)
+
+76 #ifdeà
+__USE_XOPEN2K
+
+
+77 
+	#_POSIX_NGROUPS_MAX
+ 8
+
+	)
+
+79 
+	#_POSIX_NGROUPS_MAX
+ 0
+
+	)
+
+83 #ifdeà
+__USE_XOPEN2K
+
+
+84 
+	#_POSIX_OPEN_MAX
+ 20
+
+	)
+
+86 
+	#_POSIX_OPEN_MAX
+ 16
+
+	)
+
+89 #ià!
+defšed
+ 
+__USE_XOPEN2K
+ || defšed 
+__USE_GNU
+
+
+92 
+	#_POSIX_FD_SETSIZE
+ 
+_POSIX_OPEN_MAX
+
+
+	)
+
+96 
+	#_POSIX_PATH_MAX
+ 256
+
+	)
+
+99 
+	#_POSIX_PIPE_BUF
+ 512
+
+	)
+
+103 
+	#_POSIX_RE_DUP_MAX
+ 255
+
+	)
+
+106 
+	#_POSIX_RTSIG_MAX
+ 8
+
+	)
+
+109 
+	#_POSIX_SEM_NSEMS_MAX
+ 256
+
+	)
+
+112 
+	#_POSIX_SEM_VALUE_MAX
+ 32767
+
+	)
+
+115 
+	#_POSIX_SIGQUEUE_MAX
+ 32
+
+	)
+
+118 
+	#_POSIX_SSIZE_MAX
+ 32767
+
+	)
+
+121 
+	#_POSIX_STREAM_MAX
+ 8
+
+	)
+
+124 
+	#_POSIX_SYMLINK_MAX
+ 255
+
+	)
+
+128 
+	#_POSIX_SYMLOOP_MAX
+ 8
+
+	)
+
+131 
+	#_POSIX_TIMER_MAX
+ 32
+
+	)
+
+134 
+	#_POSIX_TTY_NAME_MAX
+ 9
+
+	)
+
+137 #ifdeà
+__USE_XOPEN2K
+
+
+138 
+	#_POSIX_TZNAME_MAX
+ 6
+
+	)
+
+140 
+	#_POSIX_TZNAME_MAX
+ 3
+
+	)
+
+143 #ià!
+defšed
+ 
+__USE_XOPEN2K
+ || defšed 
+__USE_GNU
+
+
+145 
+	#_POSIX_QLIMIT
+ 1
+
+	)
+
+149 
+	#_POSIX_HIWAT
+ 
+_POSIX_PIPE_BUF
+
+
+	)
+
+152 
+	#_POSIX_UIO_MAXIOV
+ 16
+
+	)
+
+156 
+	#_POSIX_CLOCKRES_MIN
+ 20000000
+
+	)
+
+160 
+	~<b™s/loÿl_lim.h
+>
+
+163 #iâdef 
+SSIZE_MAX
+
+
+164 
+	#SSIZE_MAX
+ 
+LONG_MAX
+
+
+	)
+
+171 #iâdef 
+NGROUPS_MAX
+
+
+172 
+	#NGROUPS_MAX
+ 8
+
+	)
+
+	@/usr/include/bits/posix2_lim.h
+
+22 #iâdef 
+_BITS_POSIX2_LIM_H
+
+
+23 
+	#_BITS_POSIX2_LIM_H
+ 1
+
+	)
+
+27 
+	#_POSIX2_BC_BASE_MAX
+ 99
+
+	)
+
+30 
+	#_POSIX2_BC_DIM_MAX
+ 2048
+
+	)
+
+33 
+	#_POSIX2_BC_SCALE_MAX
+ 99
+
+	)
+
+36 
+	#_POSIX2_BC_STRING_MAX
+ 1000
+
+	)
+
+40 
+	#_POSIX2_COLL_WEIGHTS_MAX
+ 2
+
+	)
+
+44 
+	#_POSIX2_EXPR_NEST_MAX
+ 32
+
+	)
+
+47 
+	#_POSIX2_LINE_MAX
+ 2048
+
+	)
+
+51 
+	#_POSIX2_RE_DUP_MAX
+ 255
+
+	)
+
+55 
+	#_POSIX2_CHARCLASS_NAME_MAX
+ 14
+
+	)
+
+62 #iâdef 
+BC_BASE_MAX
+
+
+63 
+	#BC_BASE_MAX
+ 
+_POSIX2_BC_BASE_MAX
+
+
+	)
+
+65 #iâdef 
+BC_DIM_MAX
+
+
+66 
+	#BC_DIM_MAX
+ 
+_POSIX2_BC_DIM_MAX
+
+
+	)
+
+68 #iâdef 
+BC_SCALE_MAX
+
+
+69 
+	#BC_SCALE_MAX
+ 
+_POSIX2_BC_SCALE_MAX
+
+
+	)
+
+71 #iâdef 
+BC_STRING_MAX
+
+
+72 
+	#BC_STRING_MAX
+ 
+_POSIX2_BC_STRING_MAX
+
+
+	)
+
+74 #iâdef 
+COLL_WEIGHTS_MAX
+
+
+75 
+	#COLL_WEIGHTS_MAX
+ 255
+
+	)
+
+77 #iâdef 
+EXPR_NEST_MAX
+
+
+78 
+	#EXPR_NEST_MAX
+ 
+_POSIX2_EXPR_NEST_MAX
+
+
+	)
+
+80 #iâdef 
+LINE_MAX
+
+
+81 
+	#LINE_MAX
+ 
+_POSIX2_LINE_MAX
+
+
+	)
+
+83 #iâdef 
+CHARCLASS_NAME_MAX
+
+
+84 
+	#CHARCLASS_NAME_MAX
+ 2048
+
+	)
+
+88 
+	#RE_DUP_MAX
+ (0x7fff)
+
+	)
+
 	@/usr/include/bits/posix_opt.h
 
 19 #iâdef 
@@ -44905,6 +45723,258 @@ __w_¡Ýv®
 
 	)
 
+	@/usr/include/bits/wordsize.h
+
+3 #ià
+defšed
+ 
+__x86_64__
+ && !defšed 
+__ILP32__
+
+
+4 
+	#__WORDSIZE
+ 64
+
+	)
+
+6 
+	#__WORDSIZE
+ 32
+
+	)
+
+9 #ifdeà
+__x86_64__
+
+
+10 
+	#__WORDSIZE_TIME64_COMPAT32
+ 1
+
+	)
+
+12 
+	#__SYSCALL_WORDSIZE
+ 64
+
+	)
+
+	@/usr/include/bits/xopen_lim.h
+
+29 #iâdeà
+_XOPEN_LIM_H
+
+
+30 
+	#_XOPEN_LIM_H
+ 1
+
+	)
+
+32 
+	#__Ãed_IOV_MAX
+
+
+	)
+
+33 
+	~<b™s/¡dio_lim.h
+>
+
+65 
+	#_XOPEN_IOV_MAX
+ 
+_POSIX_UIO_MAXIOV
+
+
+	)
+
+70 
+	#NL_ARGMAX
+ 
+_POSIX_ARG_MAX
+
+
+	)
+
+73 
+	#NL_LANGMAX
+ 
+_POSIX2_LINE_MAX
+
+
+	)
+
+76 
+	#NL_MSGMAX
+ 
+INT_MAX
+
+
+	)
+
+80 
+	#NL_NMAX
+ 
+INT_MAX
+
+
+	)
+
+83 
+	#NL_SETMAX
+ 
+INT_MAX
+
+
+	)
+
+86 
+	#NL_TEXTMAX
+ 
+INT_MAX
+
+
+	)
+
+89 
+	#NZERO
+ 20
+
+	)
+
+93 #ifdeà
+INT_MAX
+
+
+94 #ià
+INT_MAX
+ == 32767
+
+95 
+	#WORD_BIT
+ 16
+
+	)
+
+97 #ià
+INT_MAX
+ == 2147483647
+
+98 
+	#WORD_BIT
+ 32
+
+	)
+
+101 
+	#WORD_BIT
+ 64
+
+	)
+
+104 #–ià
+defšed
+ 
+__INT_MAX__
+
+
+105 #ià
+__INT_MAX__
+ == 32767
+
+106 
+	#WORD_BIT
+ 16
+
+	)
+
+108 #ià
+__INT_MAX__
+ == 2147483647
+
+109 
+	#WORD_BIT
+ 32
+
+	)
+
+112 
+	#WORD_BIT
+ 64
+
+	)
+
+116 
+	#WORD_BIT
+ 32
+
+	)
+
+120 #ifdeà
+LONG_MAX
+
+
+121 #ià
+LONG_MAX
+ == 2147483647
+
+122 
+	#LONG_BIT
+ 32
+
+	)
+
+125 
+	#LONG_BIT
+ 64
+
+	)
+
+127 #–ià
+defšed
+ 
+__LONG_MAX__
+
+
+128 #ià
+__LONG_MAX__
+ == 2147483647
+
+129 
+	#LONG_BIT
+ 32
+
+	)
+
+132 
+	#LONG_BIT
+ 64
+
+	)
+
+135 
+	~<b™s/wÜdsize.h
+>
+
+136 #ià
+__WORDSIZE
+ == 64
+
+137 
+	#LONG_BIT
+ 64
+
+	)
+
+139 
+	#LONG_BIT
+ 32
+
+	)
+
 	@/usr/include/features.h
 
 18 #iâdef 
@@ -49329,6 +50399,184 @@ _IO_vfsÿnf
 _IO_vårštf
 )
 
+	@/usr/include/bits/local_lim.h
+
+24 #iâdeà
+NR_OPEN
+
+
+25 
+	#__undef_NR_OPEN
+
+
+	)
+
+27 #iâdeà
+LINK_MAX
+
+
+28 
+	#__undef_LINK_MAX
+
+
+	)
+
+30 #iâdeà
+OPEN_MAX
+
+
+31 
+	#__undef_OPEN_MAX
+
+
+	)
+
+33 #iâdeà
+ARG_MAX
+
+
+34 
+	#__undef_ARG_MAX
+
+
+	)
+
+38 
+	~<lšux/lim™s.h
+>
+
+41 #ifdeà
+__undef_NR_OPEN
+
+
+42 #undeà
+NR_OPEN
+
+
+43 #undeà
+__undef_NR_OPEN
+
+
+46 #ifdeà
+__undef_LINK_MAX
+
+
+47 #undeà
+LINK_MAX
+
+
+48 #undeà
+__undef_LINK_MAX
+
+
+51 #ifdeà
+__undef_OPEN_MAX
+
+
+52 #undeà
+OPEN_MAX
+
+
+53 #undeà
+__undef_OPEN_MAX
+
+
+56 #ifdeà
+__undef_ARG_MAX
+
+
+57 #undeà
+ARG_MAX
+
+
+58 #undeà
+__undef_ARG_MAX
+
+
+62 
+	#_POSIX_THREAD_KEYS_MAX
+ 128
+
+	)
+
+64 
+	#PTHREAD_KEYS_MAX
+ 1024
+
+	)
+
+67 
+	#_POSIX_THREAD_DESTRUCTOR_ITERATIONS
+ 4
+
+	)
+
+69 
+	#PTHREAD_DESTRUCTOR_ITERATIONS
+ 
+_POSIX_THREAD_DESTRUCTOR_ITERATIONS
+
+
+	)
+
+72 
+	#_POSIX_THREAD_THREADS_MAX
+ 64
+
+	)
+
+74 #undeà
+PTHREAD_THREADS_MAX
+
+
+78 
+	#AIO_PRIO_DELTA_MAX
+ 20
+
+	)
+
+81 
+	#PTHREAD_STACK_MIN
+ 16384
+
+	)
+
+84 
+	#DELAYTIMER_MAX
+ 2147483647
+
+	)
+
+87 
+	#TTY_NAME_MAX
+ 32
+
+	)
+
+90 
+	#LOGIN_NAME_MAX
+ 256
+
+	)
+
+93 
+	#HOST_NAME_MAX
+ 64
+
+	)
+
+96 
+	#MQ_PRIO_MAX
+ 32768
+
+	)
+
+99 
+	#SEM_VALUE_MAX
+ (2147483647)
+
+	)
+
 	@/usr/include/bits/pthreadtypes.h
 
 18 #iâdeà
@@ -50718,44 +51966,6 @@ __x86_64__
 86 
 	#__FD_SETSIZE
  1024
-
-	)
-
-	@/usr/include/bits/wordsize.h
-
-3 #ià
-defšed
- 
-__x86_64__
- && !defšed 
-__ILP32__
-
-
-4 
-	#__WORDSIZE
- 64
-
-	)
-
-6 
-	#__WORDSIZE
- 32
-
-	)
-
-9 #ifdeà
-__x86_64__
-
-
-10 
-	#__WORDSIZE_TIME64_COMPAT32
- 1
-
-	)
-
-12 
-	#__SYSCALL_WORDSIZE
- 64
 
 	)
 
@@ -58876,6 +60086,96 @@ _LIBC
 28 
 	#__¡ub_u£lib
 
+
+	)
+
+	@/usr/include/linux/limits.h
+
+1 #iâdeà
+_LINUX_LIMITS_H
+
+
+2 
+	#_LINUX_LIMITS_H
+
+
+	)
+
+4 
+	#NR_OPEN
+ 1024
+
+	)
+
+6 
+	#NGROUPS_MAX
+ 65536
+
+	)
+
+7 
+	#ARG_MAX
+ 131072
+
+	)
+
+8 
+	#LINK_MAX
+ 127
+
+	)
+
+9 
+	#MAX_CANON
+ 255
+
+	)
+
+10 
+	#MAX_INPUT
+ 255
+
+	)
+
+11 
+	#NAME_MAX
+ 255
+
+	)
+
+12 
+	#PATH_MAX
+ 4096
+
+	)
+
+13 
+	#PIPE_BUF
+ 4096
+
+	)
+
+14 
+	#XATTR_NAME_MAX
+ 255
+
+	)
+
+15 
+	#XATTR_SIZE_MAX
+ 65536
+
+	)
+
+16 
+	#XATTR_LIST_MAX
+ 65536
+
+	)
+
+18 
+	#RTSIG_MAX
+ 32
 
 	)
 
@@ -73842,8 +75142,8 @@ _ASM_GENERIC_ERRNO_BASE_H
 .
 1
 /usr/include
-107
-2437
+113
+2609
 RGen.cc
 RGen.h
 SRGen.cc
@@ -73873,6 +75173,7 @@ sim_router.h
 sim_routing.cc
 sim_vcarb.cc
 sim_vcarb.h
+/usr/include/limits.h
 /usr/include/math.h
 /usr/include/stdio.h
 /usr/include/stdlib.h
@@ -73889,6 +75190,8 @@ sim_vcarb.h
 /usr/include/bits/mathdef.h
 /usr/include/bits/mathinline.h
 /usr/include/bits/nan.h
+/usr/include/bits/posix1_lim.h
+/usr/include/bits/posix2_lim.h
 /usr/include/bits/posix_opt.h
 /usr/include/bits/stdio-ldbl.h
 /usr/include/bits/stdio.h
@@ -73903,6 +75206,8 @@ sim_vcarb.h
 /usr/include/bits/unistd.h
 /usr/include/bits/waitflags.h
 /usr/include/bits/waitstatus.h
+/usr/include/bits/wordsize.h
+/usr/include/bits/xopen_lim.h
 /usr/include/features.h
 /usr/include/getopt.h
 /usr/include/libio.h
@@ -73910,10 +75215,10 @@ sim_vcarb.h
 /usr/include/xlocale.h
 /usr/include/_G_config.h
 /usr/include/bits/libio-ldbl.h
+/usr/include/bits/local_lim.h
 /usr/include/bits/pthreadtypes.h
 /usr/include/bits/stdio-lock.h
 /usr/include/bits/typesizes.h
-/usr/include/bits/wordsize.h
 /usr/include/ctype.h
 /usr/include/endian.h
 /usr/include/gnu/stubs.h
@@ -73933,6 +75238,7 @@ sim_vcarb.h
 /usr/include/gnu/stubs-32.h
 /usr/include/gnu/stubs-64.h
 /usr/include/gnu/stubs-x32.h
+/usr/include/linux/limits.h
 /usr/include/wchar.h
 /usr/include/bits/byteswap-16.h
 /usr/include/bits/timex.h

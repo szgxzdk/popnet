@@ -156,7 +156,11 @@ void sim_router_template::routing_decision()
 			add_type sor_t = flit_t.sor_addr();
 			if(address_ == des_t) {
 				accept_flit(event_time, flit_t);
-				input_module_.remove_flit(0, j);
+				//modified by Swain
+				if (flit_t.type() & TAIL_)
+					input_module_.get_flit(0, j).set_type(TAIL_);
+				else
+					input_module_.remove_flit(0, j);
 				input_module_.state_update(0, j, HOME_);
 			}else {
 				input_module_.clear_routing(0,j);
@@ -169,7 +173,7 @@ void sim_router_template::routing_decision()
 			if(input_module_.input(0, j).size() > 0) {
 				flit_t = input_module_.get_flit(0, j);
 				//modified by Swain
-				//Sassert(!(flit_t.type() & HEADER_));
+				Sassert(!(flit_t.type() & HEADER_));
 				accept_flit(event_time, flit_t);
 				input_module_.remove_flit(0, j);
 				//modified by Swain
@@ -222,7 +226,11 @@ void sim_router_template::routing_decision()
 				add_type sor_t = flit_t.sor_addr();
 				if(address_ == des_t) {
 					accept_flit(event_time, flit_t);
-					input_module_.remove_flit(i, j);
+					//modified by Swain
+					if (flit_t.type() & TAIL_)
+						input_module_.get_flit(i, j).set_type(TAIL_);
+					else
+						input_module_.remove_flit(i, j);
 					input_module_.state_update(i, j, HOME_);
 				}else {
 					input_module_.clear_routing(i, j);

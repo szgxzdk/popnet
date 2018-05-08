@@ -659,7 +659,7 @@ long end_time;
 void sim_router_template::accept_flit(time_type a, const flit_template & b)
 {
 	//modified by Swain
-    if(b.type() & TAIL_) {
+    if(b.type() == TAIL_) {
 		mess_queue::wm_pointer().TotFin_inc();
 		time_type t = a - b.start_time();
 		delay_update(t);

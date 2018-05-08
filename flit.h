@@ -39,6 +39,9 @@ class flit_template {
 		long packet_id() {return packet_id_;}
 		long packet_id() const {return packet_id_;}
 
+		//added by Swain
+		void set_type(int type) {type_ = type;}
+
 		void set_start(time_type a) {start_time_ = a;}
 		void set_finish(time_type a) {finish_time_ = a;}
 
